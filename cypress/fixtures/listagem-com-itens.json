@@ -1,0 +1,43 @@
+[
+    {
+        "firstName": "Misael",
+        "lastName": "QA",
+        "adress": "Rua das aboboras ",
+        "emailAdress": "misael@email.com",
+        "radioGender": "m",
+        "checks": [
+            "Netflix",
+            "Dormir"
+        ],
+        "selectCountries": "",
+        "selectYears": "",
+        "selectMonths": "",
+        "pwd": ""
+    },
+    {
+        "firstName": "",
+        "lastName": "",
+        "adress": "",
+        "emailAdress": "",
+        "radioGender": "",
+        "checks": [],
+        "selectCountries": "",
+        "selectYears": "",
+        "selectMonths": "",
+        "pwd": ""
+    },
+    {
+        "firstName": "Teste",
+        "lastName": "Testando",
+        "adress": "Rua dois",
+        "emailAdress": "mailer@mailer.com",
+        "radioGender": "m",
+        "checks": [
+            "Netflix"
+        ],
+        "selectCountries": "Austrália",
+        "selectYears": "2021",
+        "selectMonths": "Janeiro",
+        "pwd": "Teste@123"
+    }
+]
