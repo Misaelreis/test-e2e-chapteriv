@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-05T19:22:41.280Z",
+    "end": "2021-12-05T19:22:42.604Z",
+    "duration": 1324,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "af875e35-66ea-432d-9d27-2d8bfe0b9ff3",
+      "title": "",
+      "fullFile": "cypress/integration/listagem.spec.js",
+      "file": "cypress/integration/listagem.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2620f3a1-7264-4350-839f-42ca457b4c5f",
+          "title": "Listagem",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Quando não houver cadastros, então a listagem deve estar vazia",
+              "fullTitle": "Listagem Quando não houver cadastros, então a listagem deve estar vazia",
+              "timedOut": null,
+              "duration": 818,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"listagem-sem-itens\").then(data => {\n  window.localStorage.setItem(\"data\", JSON.stringify(data));\n});\ncy.visit(\"/listagem.html\");\ncy.get(\"table tbody tr\").should(\"have.length\", 0);",
+              "err": {},
+              "uuid": "f52a6731-5345-4807-9a1c-1732a97146cb",
+              "parentUUID": "2620f3a1-7264-4350-839f-42ca457b4c5f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Quando houver cadastros, então a listagem deve exibir cada registro",
+              "fullTitle": "Listagem Quando houver cadastros, então a listagem deve exibir cada registro",
+              "timedOut": null,
+              "duration": 443,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"listagem-com-itens\").then(data => {\n  window.localStorage.setItem(\"data\", JSON.stringify(data));\n});\ncy.visit(\"/listagem.html\");\ncy.get(\"table tbody tr\").should(\"have.length\", 3);",
+              "err": {},
+              "uuid": "365e0b59-0387-4309-b29c-fccb68e6a0a4",
+              "parentUUID": "2620f3a1-7264-4350-839f-42ca457b4c5f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f52a6731-5345-4807-9a1c-1732a97146cb",
+            "365e0b59-0387-4309-b29c-fccb68e6a0a4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1261,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reporterDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
