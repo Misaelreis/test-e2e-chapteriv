@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-05T19:22:30.531Z",
-    "end": "2021-12-05T19:22:36.432Z",
-    "duration": 5901,
+    "start": "2021-12-05T21:20:36.919Z",
+    "end": "2021-12-05T21:20:43.045Z",
+    "duration": 6126,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4130b38c-c352-4adc-88ff-d0620c55f671",
+      "uuid": "6acc2d8c-6cab-4f03-87fc-0238fb772a96",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f22070e2-afe6-46d1-bb7c-6526cdc16298",
+          "uuid": "801fae28-68d1-4457-861c-01ed1d0885ed",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando eu informar os dados e finalizar, então o cadastro é realizado",
               "fullTitle": "Cadastro Quando eu informar os dados e finalizar, então o cadastro é realizado",
               "timedOut": null,
-              "duration": 5877,
+              "duration": 6018,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"/\");\ncy.get(\"input[name=firstName]\").type(chance.first());\ncy.get(\"input[name=lastName]\").type(chance.last());\ncy.get(\"textarea[name=adress]\").type(chance.address());\ncy.get(\"input[name=emailAdress]\").type(chance.email());\ncy.get(\"input[value=n]\").check();\ncy.get(\"input[type=checkbox]\").check(\"Netflix\");\ncy.get(\"input[type=checkbox]\").check(\"Dormir\");\ncy.get(\"select#countries\").select(\"Dinamarca\", {\n  force: true\n});\ncy.get(\"select#years\").select(\"2006\", {\n  force: true\n});\ncy.get(\"select#months\").select(\"Janeiro\", {\n  force: true\n});\ncy.get(\"select#days\").select(\"8\", {\n  force: true\n});\ncy.get(\"input#firstpassword\").type(\"Aluno@21\");\ncy.get(\"input#secondpassword\").type(\"Aluno@21\");\ncy.get(\"#submitbtn\").click();\ncy.url().should(\"contain\", \"listagem\");",
               "err": {},
-              "uuid": "b7db8844-6033-4974-9bcd-f8c2ba93ad97",
-              "parentUUID": "f22070e2-afe6-46d1-bb7c-6526cdc16298",
+              "uuid": "383ac574-1a9c-4823-829d-d7fa442c86d2",
+              "parentUUID": "801fae28-68d1-4457-861c-01ed1d0885ed",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b7db8844-6033-4974-9bcd-f8c2ba93ad97"
+            "383ac574-1a9c-4823-829d-d7fa442c86d2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5877,
+          "duration": 6018,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
