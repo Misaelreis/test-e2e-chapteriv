@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-05T21:28:24.612Z",
-    "end": "2021-12-05T21:28:25.653Z",
-    "duration": 1041,
+    "start": "2021-12-07T00:05:11.173Z",
+    "end": "2021-12-07T00:05:12.705Z",
+    "duration": 1532,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "efe39357-aa83-4a0d-942f-7994313a10b3",
+      "uuid": "bbceebb4-5e3b-43d0-8797-c1068f442f74",
       "title": "",
       "fullFile": "cypress/integration/listagem.spec.js",
       "file": "cypress/integration/listagem.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ae6845ab-2ac7-4a9d-8822-2d1a6ebea3a7",
+          "uuid": "856c96e4-294c-47ef-8387-a6ed2215466d",
           "title": "Listagem",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando não houver cadastros, então a listagem deve estar vazia",
               "fullTitle": "Listagem Quando não houver cadastros, então a listagem deve estar vazia",
               "timedOut": null,
-              "duration": 653,
+              "duration": 1052,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.fixture(\"listagem-sem-itens\").then(data => {\n  window.localStorage.setItem(\"data\", JSON.stringify(data));\n});\ncy.visit(\"/listagem.html\");\ncy.get(\"table tbody tr\").should(\"have.length\", 0);",
               "err": {},
-              "uuid": "2e03f04e-2da8-4b64-bc55-0287d87140fb",
-              "parentUUID": "ae6845ab-2ac7-4a9d-8822-2d1a6ebea3a7",
+              "uuid": "a2637555-2636-4d17-a5a6-78473425b501",
+              "parentUUID": "856c96e4-294c-47ef-8387-a6ed2215466d",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Quando houver cadastros, então a listagem deve exibir cada registro",
               "fullTitle": "Listagem Quando houver cadastros, então a listagem deve exibir cada registro",
               "timedOut": null,
-              "duration": 325,
+              "duration": 407,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.fixture(\"listagem-com-itens\").then(data => {\n  window.localStorage.setItem(\"data\", JSON.stringify(data));\n});\ncy.visit(\"/listagem.html\");\ncy.get(\"table tbody tr\").should(\"have.length\", 3);",
               "err": {},
-              "uuid": "454d3ee1-3824-4bd1-b2aa-cd1133c7542d",
-              "parentUUID": "ae6845ab-2ac7-4a9d-8822-2d1a6ebea3a7",
+              "uuid": "96b615da-5439-44a8-82d7-529442daa0be",
+              "parentUUID": "856c96e4-294c-47ef-8387-a6ed2215466d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2e03f04e-2da8-4b64-bc55-0287d87140fb",
-            "454d3ee1-3824-4bd1-b2aa-cd1133c7542d"
+            "a2637555-2636-4d17-a5a6-78473425b501",
+            "96b615da-5439-44a8-82d7-529442daa0be"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 978,
+          "duration": 1459,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
