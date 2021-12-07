@@ -1,4 +1,5 @@
 # test-e2e-chapteriv ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Misaelreis/test-e2e-chapteriv/Testes)
+[Relatório de excecução](https://misaelreis.github.io/test-e2e-chapteriv/)
 ## __Requisitos__
 1. [Node](https://nodejs.org/pt-br/)
 2. Chrome
